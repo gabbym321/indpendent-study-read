@@ -12,25 +12,25 @@ Tomorrow is my last day to work on this project before the presentations. What I
 ``"phpmailer/phpmailer": "~6.0"`` This is the code I needed to type in to use PHPmailer <br> <br> 
 
 
-``// These must be at the top of your script, not inside a function
+``<?php 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
 require 'vendor/autoload.php';
 
-$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+$mail = new PHPMailer(true);                              
 try {
     //Server settings
-    $mail->SMTPDebug = 2;                                 // Enable verbose debug output
-    $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'user@example.com';                 // SMTP username
-    $mail->Password = 'secret';                           // SMTP password
-    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;                                    // TCP port to connect to
-`` This was a lot but here is the code I needed to put in my file in order to tell the email that it is okay to send and accept the emails I am making with PHP.  <br> <br> 
+    $mail->SMTPDebug = 2;                                
+    $mail->isSMTP();                                     
+    $mail->Host = 'smtp1.example.com;smtp2.example.com'; 
+    $mail->SMTPAuth = true;                              
+    $mail->Username = 'user@example.com';                
+    $mail->Password = 'secret';                          
+    $mail->SMTPSecure = 'tls';                            
+    $mail->Port = 587; ?> ``                                  
+ This was a lot but here is the code I needed to put in my file in order to tell the email that it is okay to send and accept the emails I am making with PHP.  <br> <br> 
 My learning was shown a lot in my research trying to figure out why my emails were not sending. Although this code was explained in a video, the more important part was understanding why I was doing it. There is a certain authercation that needs to be used because of the amount of spam mail emails received every day. 
 
 ## Takeaways: 

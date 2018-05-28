@@ -9,8 +9,8 @@ Tomorrow is my last day to work on this project before the presentations. What I
 
 ## Evidence of learning: 
 
-`"phpmailer/phpmailer": "~6.0"` This is the code I needed to type in to use PHPmailer <br> <br> 
-`<?php
+``"phpmailer/phpmailer": "~6.0"`` This is the code I needed to type in to use PHPmailer <br> <br> 
+``<?php
 // Import PHPMailer classes into the global namespace
 // These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
@@ -53,7 +53,7 @@ $mail->send();
 echo 'Message has been sent';
 } catch (Exception $e) {
 echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
-}` This was a lot but here is the code I needed to put in my file in order to tell the email that it is okay to send and accept the emails I am making with PHP.  <br> <br> 
+}``  This was a lot but here is the code I needed to put in my file in order to tell the email that it is okay to send and accept the emails I am making with PHP.  <br> <br> 
 My learning was shown a lot in my research trying to figure out why my emails were not sending. Although this code was explained in a video, the more important part was understanding why I was doing it. There is a certain authercation that needs to be used because of the amount of spam mail emails received every day. 
 
 ## Takeaways: 

@@ -12,7 +12,7 @@ Tomorrow is my last day to work on this project before the presentations. What I
 ``"phpmailer/phpmailer": "~6.0"`` This is the code I needed to type in to use PHPmailer <br> <br> 
 
 
-`<?php 
+``<?php 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -29,7 +29,7 @@ try {
     $mail->Username = 'user@example.com';                
     $mail->Password = 'secret';                          
     $mail->SMTPSecure = 'tls';                            
-    $mail->Port = 587; ?> `                                  
+    $mail->Port = 587; ?>``                                 
  This was a lot but here is the code I needed to put in my file in order to tell the email that it is okay to send and accept the emails I am making with PHP.  <br> <br> 
 My learning was shown a lot in my research trying to figure out why my emails were not sending. Although this code was explained in a video, the more important part was understanding why I was doing it. There is a certain authercation that needs to be used because of the amount of spam mail emails received every day. 
 
